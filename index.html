@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beautiful weather application with dynamic backgrounds">
+    <title>WeatherSphere | Real-time Weather Updates</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <video id="background-video" autoplay muted loop playsinline></video>
+    <div id="weather-container">
+        <header>
+            <h1>WeatherSphere</h1>
+            <p class="tagline">Your window to the skies</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="city" placeholder="Enter city or location" aria-label="City search input">
+                <div id="autocomplete-dropdown" class="autocomplete-dropdown"></div>
+            </div>
+            <button id="search-button" aria-label="Search weather">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                Search
+            </button>
+        </div>
+
+        <div class="loader" aria-hidden="true"></div>
+
+        <main>
+            <div class="current-weather">
+                <img id="weather-icon" alt="" role="presentation">
+                <div id="temp-div"></div>
+                <div id="weather-info"></div>
+            </div>
+
+            <div id="weather-details">
+                <div class="detail-card">
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value" id="humidity">--%</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Real Feel</span>
+                    <span class="detail-value" id="real-feel">--°C</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Wind</span>
+                    <span class="detail-value" id="wind">-- km/h</span>
+                    <span class="detail-subtext" id="wind-direction">--</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Sunset</span>
+                    <span class="detail-value" id="sunset">--:--</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Pressure</span>
+                    <span class="detail-value" id="pressure">-- hPa</span>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Air Quality</span>
+                    <span class="detail-value" id="air-quality">--</span>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <h3 id="hourly-heading">Hourly Forecast</h3>
+                <div id="hourly-forecast"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data provided by <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
