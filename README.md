@@ -36,7 +36,7 @@ this project fetches real-time weather data using the OpenWeatherMap API and dis
 ## 🚀 Live Preview
 
 Experience the app live:  
-[Click here to try it out](https://arnav-is-op.github.io/weather-sphere/)  
+[Click here to try it out](https://arnav-is-op.github.io/Weather-Sphere/)  
 
 
 
