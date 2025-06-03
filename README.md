@@ -40,7 +40,7 @@ Experience the app live:
 
 
 
-[📁 GitHub Repo](https://github.com/arnav-is-op/weather-sphere)
+[📁 GitHub Repo](https://github.com/arnav-is-op/Weather-Sphere)
 
 ## 📦 Tech Stack
 
@@ -51,7 +51,7 @@ Experience the app live:
 
 
 
-[📁 GitHub Repo](https://github.com/arnav-is-op/weather-sphere)
+
 
 ## 📦 Tech Stack
 
