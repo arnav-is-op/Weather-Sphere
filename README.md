@@ -26,6 +26,10 @@ Experience the app live:
 - HTML5
 - CSS3
 - JavaScript
-- OpenWeatherMap API)  
+- OpenWeatherMap API)
+
+## Made By
+
+Arnav Heerakar
 
 
