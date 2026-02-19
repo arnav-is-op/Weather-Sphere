@@ -28,8 +28,8 @@ Experience the app live:
 - JavaScript
 - OpenWeatherMap API)
 
-## Made By
-
+## Author: 
 Arnav Heerakar
+
 
 
